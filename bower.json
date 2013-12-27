@@ -1,6 +1,7 @@
 {
   "name": "dashboard",
   "version": "0.0.1",
+  "directory": "src/components",
   "homepage": "https://github.com/crudh/dashboard",
   "authors": [
     "Christian Rudh <christian@rudh.se>"
