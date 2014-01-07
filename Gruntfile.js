@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-  grunt.initConfig({
+  var config = {
     pkg: grunt.file.readJSON("package.json"),
 
     connect: {
@@ -14,23 +14,38 @@ module.exports = function(grunt) {
 
     react: {
       options: {
-        extension: ".jsx"
+        extension: ".jsx",
+        ignoreMTime: false
       },
+      files: {
+        expand: true,
+        cwd: "./src/app",
+        src: ["**/*.jsx"],
+        dest: "./src/app",
+        ext: ".js"
+      }
+    },
 
-      all: {
-        files: [{
-          expand: true,
-          cwd: "./src/app",
-          src: ["**/*.jsx"],
-          dest: "./src/app",
-          ext: ".js"
-        }]
+    esteWatch: {
+      options: {
+        livereload: {
+            enabled: false
+        },
+        dirs: [
+          "./src/app/**/"
+        ]
+      },
+      jsx: function(filepath) {
+        return ["react"];
       }
     }
-  });
+  };
+
+  grunt.initConfig(config);
 
   grunt.loadNpmTasks("grunt-contrib-connect");
-  grunt.loadNpmTasks('grunt-react');
+  grunt.loadNpmTasks("grunt-react");
+  grunt.loadNpmTasks('grunt-este-watch');
 
   grunt.registerTask("default", ["react"]);
 };
