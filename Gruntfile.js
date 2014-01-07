@@ -38,14 +38,25 @@ module.exports = function(grunt) {
             jsx: function(filepath) {
                 return ["react"];
             }
+        },
+
+        concurrent: {
+            dev: {
+                tasks: ["connect", "esteWatch"],
+                options: {
+                    logConcurrentOutput: true
+                }
+            }
         }
     };
 
     grunt.initConfig(config);
 
+    grunt.loadNpmTasks("grunt-concurrent");
     grunt.loadNpmTasks("grunt-contrib-connect");
     grunt.loadNpmTasks("grunt-react");
     grunt.loadNpmTasks('grunt-este-watch');
 
     grunt.registerTask("default", ["react"]);
+    grunt.registerTask("dev", ["concurrent:dev"]);
 };

@@ -1,22 +1,23 @@
 {
-    "name": "dashboard",
-    "version": "0.0.1",
-    "description": "dashboard",
-    "main": "src/main.js",
-    "repository": {
-        "type": "git",
-        "url": "https://crudh@github.com/crudh/dashboard.git"
-    },
-    "author": "Christian Rudh <christian@rudh.se>",
-    "license": "Apache 2.0",
-    "bugs": {
-        "url": "https://github.com/crudh/dashboard/issues"
-    },
-    "homepage": "https://github.com/crudh/dashboard",
-    "devDependencies": {
-        "grunt": "~0.4.2",
-        "grunt-contrib-connect": "~0.5.0",
-        "grunt-react": "~0.6.0",
-        "grunt-este-watch": "~0.1.15"
-    }
+  "name": "dashboard",
+  "version": "0.0.1",
+  "description": "dashboard",
+  "main": "src/main.js",
+  "repository": {
+    "type": "git",
+    "url": "https://crudh@github.com/crudh/dashboard.git"
+  },
+  "author": "Christian Rudh <christian@rudh.se>",
+  "license": "Apache 2.0",
+  "bugs": {
+    "url": "https://github.com/crudh/dashboard/issues"
+  },
+  "homepage": "https://github.com/crudh/dashboard",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-connect": "~0.5.0",
+    "grunt-react": "~0.6.0",
+    "grunt-este-watch": "~0.1.15",
+    "grunt-concurrent": "~0.4.2"
+  }
 }
