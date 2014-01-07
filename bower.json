@@ -1,24 +1,24 @@
 {
-  "name": "dashboard",
-  "version": "0.0.1",
-  "directory": "src/components",
-  "homepage": "https://github.com/crudh/dashboard",
-  "authors": [
-    "Christian Rudh <christian@rudh.se>"
-  ],
-  "license": "Apache 2.0",
-  "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
-  "dependencies": {
-    "react": "~0.8.0",
-    "lodash": "~2.4.1",
-    "requirejs": "~2.1.9",
-    "backbone": "~1.1.0"
-  }
+    "name": "dashboard",
+    "version": "0.0.1",
+    "directory": "src/components",
+    "homepage": "https://github.com/crudh/dashboard",
+    "authors": [
+        "Christian Rudh <christian@rudh.se>"
+    ],
+    "license": "Apache 2.0",
+    "private": true,
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "react": "~0.8.0",
+        "lodash": "~2.4.1",
+        "requirejs": "~2.1.9",
+        "backbone": "~1.1.0"
+    }
 }
