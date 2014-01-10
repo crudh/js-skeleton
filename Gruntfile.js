@@ -13,16 +13,19 @@ module.exports = function(grunt) {
         },
 
         react: {
-            options: {
-                extension: ".jsx",
-                ignoreMTime: false
-            },
-            files: {
-                expand: true,
-                cwd: "./src/app",
-                src: ["**/*.jsx"],
-                dest: "./src/app",
-                ext: ".js"
+            all: {
+                options: {
+                    extension: ".jsx",
+                    ignoreMTime: false
+                },
+
+                files: [{
+                    expand: true,
+                    cwd: "./src/app",
+                    src: ["**/*.jsx"],
+                    dest: "./src/compiled/app",
+                    ext: ".js"
+                }]
             }
         },
 
