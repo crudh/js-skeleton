@@ -1,8 +1,8 @@
 {
-  "name": "dashboard",
+  "name": "js-skeleton",
   "version": "0.0.1",
   "directory": "src/components",
-  "homepage": "https://github.com/crudh/dashboard",
+  "homepage": "https://github.com/crudh/js-skeleton",
   "authors": [
     "Christian Rudh <christian@rudh.se>"
   ],
