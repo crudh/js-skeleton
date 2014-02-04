@@ -6,7 +6,7 @@
   "authors": [
     "Christian Rudh <christian@rudh.se>"
   ],
-  "license": "Apache 2.0",
+  "license": "MIT",
   "private": true,
   "ignore": [
     "**/.*",
