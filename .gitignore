@@ -3,3 +3,4 @@ node_modules
 src/components
 src/compiled
 *.iml
+.DS_Store
